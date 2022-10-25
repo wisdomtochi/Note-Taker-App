@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 9000;
+    margin: 30px;
+    text-align: center;
+    background: rgb(158, 155, 155);
+}
+
+h1 {
+    color: green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+textarea {
+    max-width: 800;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+    padding: 7px;
+    display: block;
+    outline: none;
+}
+
+.add-notes {
+    display: block;
+    background: green;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+}
+
+.info-text{
+    color: green;
+    margin-top: 10px;
+}
+
+/* the renaming section styling */
+.change-name{
+    margin: 30px 10px;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.change-name > input{
+    display: block;
+    padding: 9px;
+    border: none;
+    border-radius: 8px;
+    width: 200px;
+    height: 38px;
+    margin-bottom: 8px;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.change-name > button{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background: green;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.3;
+    cursor: pointer;
+}
+
+.change-name > button:hover{
+    background-color: rgb(3, 80, 3);
+}
+
+.show{
+    display: block;
+}
+
+/* formatting the notes section */
+.notes {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.note {
+    flex-direction: column;
+    margin-left: 100px;
+    max-width: 13vw;
+    color: white;
+    /* position: absolute;
+    top: 130px; */
+}
+
+.note h2 {
+    color: rgb(19, 19, 114);
+    margin-top: 20px;
+}
+
+.note p {
+    display: block;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.note button {
+    background: rgb(44, 44, 209);
+    color: #fff;
+    padding: 10px 8px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-view,
+.btn-clear {
+    display: inline-block;
+}
+
+/* The Popup Section */
+.popup-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    display: none;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 3% auto;
+    padding: 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 10px;
+}
+
+.popup-close {
+    font-size: 25px;
+    text-align: left;
+    margin: -20px -10px 10px;
+    cursor: pointer;
+}
+
+.popup-close:hover {
+    color: green;
+}

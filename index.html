@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Taker</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Note Taker</h1>
+
+    <textarea class="text-input" rows="10" placeholder="Write Your Note Here"></textarea>
+    <input type="submit" class="add-notes" value="Add to Notes" />
+    <p class="info-text">To change note title *Double Click On The Note Title*</p>
+
+    <!-- the popup -->
+    <div class="popup">
+        <h4 class="popup-close">x</h4>
+        <p></p>
+    </div>
+    
+    <!-- the notes -->
+   <div class="notes"></div>
+
+    <script src="app.js"></script>
+    <!-- <script src="tooltip.js"></script> -->
+</body>
+
+</html>
