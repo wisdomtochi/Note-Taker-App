@@ -26,14 +26,7 @@ const noteTemplate = () => {
   `;
 
   noteWrapper.innerHTML += html;
-  // if (userInput.value.length >= 20) {
-  //   // noteWrapper.children.textContent = "hello";
-
-  //   // note.textContent = userInput.value.slice(0, 50) + "...";
-  //   // noteTemplate();
-  // }
 };
-// localStorage.clear()
 
 notesBtn.addEventListener("click", (e) => {
   if (userInput.value.length === 0) {
@@ -41,7 +34,6 @@ notesBtn.addEventListener("click", (e) => {
   } else {
     noteTemplate();
   }
-  // console.log(test);
   userInput.value = "";
 });
 
@@ -59,15 +51,6 @@ noteWrapper.addEventListener("click", (e) => {
       alert("Invalid Title");
     }else {
       e.target.parentElement.nextElementSibling.firstElementChild.textContent = e.target.previousElementSibling.value;
-      // // storing in local storage
-      // values.push(e.target.previousElementSibling.value)
-      // localStorage.setItem("testkey", JSON.stringify(values));
-      // let test = JSON.parse(localStorage.getItem("testkey"));
-      // test = String(test);
-      // console.log(test);
-      // values.forEach(() => {
-        
-      // })
       // removing the renaming section
       e.target.parentElement.classList.remove("show");
       e.target.previousElementSibling.value = "";
@@ -99,5 +82,3 @@ popup.addEventListener("click", (e) => {
     popup.style.display = "none";
   }
 });
-
-// Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto veniam quos reprehenderit ducimus cumque libero eos vero, saepe illo, possimus quo voluptates eum. Reiciendis repellendus ad omnis ea excepturi
